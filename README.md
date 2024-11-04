@@ -1,4 +1,3 @@
-
 # Sistema de Catálogo y Gestión de Carrito de Cursos
 
 Este proyecto, titulado  **Sistema de Catálogo y Gestión de Carrito de Cursos** , constituye una aplicación web avanzada que permite a los usuarios explorar, buscar y añadir cursos a un carrito de compra persistente. La persistencia de datos se implementa mediante  **IndexedDB** , lo que garantiza que tanto el catálogo de cursos como los elementos del carrito y los cursos personalizados permanezcan almacenados de manera duradera. Las funcionalidades incluyen una barra de búsqueda dinámica, visualización detallada de cursos y un sistema de carrito con opciones para añadir, actualizar y eliminar cursos.
@@ -29,6 +28,8 @@ Este proyecto, titulado  **Sistema de Catálogo y Gestión de Carrito de Cursos*
 ### 1. Visualización de Detalles del Curso
 
 * Navegar a la página de detalles de un curso es sencillo: basta con seleccionar el curso deseado desde las imágenes en la interfaz de catálogo o utilizar la barra de búsqueda.
+
+  ![1730724336862](image/README/1730724336862.png)![1730724354085](image/README/1730724354085.png)
 * La página de detalles proporciona información completa del curso, incluyendo el nombre, el instructor, el precio y la imagen correspondiente.
 
 ### 2. Gestión de Carrito de Compra
@@ -58,7 +59,7 @@ Este proyecto, titulado  **Sistema de Catálogo y Gestión de Carrito de Cursos*
 
 1. **Barra de Búsqueda con Autocompletado** :
 
-* **Justificación** : Proveer una barra de búsqueda con autocompletado ofrece una experiencia de usuario más ágil y personalizada, permitiendo una localización rápida de cursos específicos, especialmente a medida que el catálogo de cursos aumenta en tamaño. 
+* **Justificación** : Proveer una barra de búsqueda con autocompletado ofrece una experiencia de usuario más ágil y personalizada, permitiendo una localización rápida de cursos específicos, especialmente a medida que el catálogo de cursos aumenta en tamaño.
 
 1. **Base de Datos Persistente con IndexedDB** :
 
