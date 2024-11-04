@@ -1,0 +1,323 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #f5f3f3;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+header {
+  padding: 20px 0 0 0;
+  background: white;
+  text-align: center;
+}
+@media (min-width: 750px) {
+  header {
+    text-align: left;
+  }
+}
+.borrar-curso {
+  background-color: red;
+  border-radius: 50%;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+.borrar-curso:hover{
+  background-color: rgba(0, 0, 0, 0.9); /* Color al pasar el mouse */
+}
+
+ul {
+  list-style: none;
+}
+#hero {
+  background-image: url(../img/hero.jpg);
+  height: 350px;
+  background-size: cover;
+}
+#encabezado {
+  margin: 30px 0;
+}
+.submenu {
+  position: relative;
+}
+
+.submenu #carrito {
+  display: none;
+}
+.submenu:hover #carrito {
+  display: block;
+  position: absolute;
+  right: 0;
+
+  top: 100%;
+  z-index: 1;
+  background-color: white;
+  padding: 20px;
+  min-height: 400px;
+  min-width: 300px;
+}
+
+.submenu #carrito.visible { /* También puede ser visible por la clase 'visible' */
+  display: block;
+  position: absolute;
+  right: 0;
+
+  top: 100%;
+  z-index: 1;
+  background-color: white;
+  padding: 20px;
+  min-height: 400px;
+  min-width: 300px;
+}
+
+.vacio {
+  padding: 10px;
+  background-color: crimson;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+}
+.contenido-hero {
+  margin-top: 80px;
+  color: white;
+}
+.contenido-hero form {
+  position: relative;
+  margin-bottom: 0;
+}
+/* Estilos para el formulario de búsqueda */
+.formulario {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo del campo de entrada */
+.buscador-input {
+  width: 100%;
+  padding: 10px 50px 10px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #000; /* Color negro para el texto */
+}
+
+
+/* Estilo del botón de envío con el icono de lupa */
+.submit-buscador {
+  position: absolute;
+  right: 10px;
+  background-size: 20px 20px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Asegura que el botón no tenga texto visible, solo el icono */
+.submit-buscador .icon-lupa {
+  display: none;
+}
+
+#resultados-autocompletado {
+  border: 1px solid #ccc;
+  background: white; /* Fondo blanco */
+  max-height: 200px;
+  overflow-y: auto; /* Permitir desplazamiento */
+  position: absolute; /* Posicionamiento absoluto para flotar sobre otros elementos */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  width: calc(100% - 20px); /* Asegúrate de que el ancho sea ajustado */
+  display: none; /* Ocultar por defecto */
+  box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
+
+.resultado-item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  color: black; /* Color de texto negro */
+  display: flex; /* Utiliza flexbox para alinear elementos */
+  align-items: center; /* Centrar verticalmente */
+  width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+  box-sizing: border-box; /* Incluye padding en el ancho total */
+}
+
+.resultado-item img {
+  width: 40px; /* Ajusta el tamaño de la imagen */
+  height: 40px; /* Mantiene la proporción de la imagen */
+  margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.resultado-item .texto {
+  flex-grow: 1; /* Permite que el texto ocupe el espacio restante */
+  color: black; /* Asegura que el texto sea negro */
+}
+
+.resultado-item:hover {
+  background-color: #f0f0f0; /* Cambia el color de fondo al pasar el mouse */
+  cursor: pointer; /* Cambia el cursor a pointer para indicar que es interactivo */
+}
+
+
+
+
+  
+
+
+.barra {
+  padding: 20px 0;
+  background: rgb(245, 174, 213); /* fallback for old browsers */
+  background: linear-gradient(
+    90deg,
+    rgba(245, 174, 213, 1) 0%,
+    rgba(233, 52, 86, 1) 0%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#741d51', endColorstr='#e44e52',GradientType=1 ); /* IE6-9 */
+}
+
+.barra p {
+  margin: 0;
+  color: white;
+}
+.icono {
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 60px;
+  background-size: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+@media (min-width: 750px) {
+  .icono {
+    margin-bottom: 0;
+  }
+}
+.icono1 {
+  background-image: url(../img/icono1.png);
+}
+.icono2 {
+  background-image: url(../img/icono2.png);
+}
+.icono3 {
+  background-image: url(../img/icono3.png);
+}
+
+#lista-cursos .row {
+  margin-bottom: 20px;
+}
+.agregar-carrito {
+  margin: 10px 0;
+}
+
+.card {
+  text-align: center;
+  border: 1px solid #e1e1e1;
+  background: white;
+}
+@media (min-width: 550px) {
+  .card {
+    text-align: left;
+  }
+}
+.info-card {
+  padding: 10px 20px;
+}
+
+.info-card p,
+.card h4 {
+  margin-bottom: 5px;
+}
+.info-card .precio {
+  text-decoration: line-through;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.info-card .precio span {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.footer {
+  margin-top: 40px;
+  border-top: 1px solid #aaa;
+  padding-top: 40px;
+}
+.footer .menu a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+/* añadido por mi */
+td {
+  text-align: center;        
+  vertical-align: middle;     
+}
+
+td img {
+  vertical-align: -15px;
+}
+
+/* Estilo para el botón de eliminación */
+.delete-button {
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo negro oscuro */
+  color: #ffffff; /* Color de la "X" blanco */
+  padding: 10px 15px; /* Espaciado alrededor del texto */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+  text-align: center; /* Alinear el texto en el centro */
+  font-size: 1em; /* Tamaño de fuente más grande */
+  display: flex; /* Usar flexbox para centrar el texto */
+  align-items: center; /* Alinear verticalmente */
+  justify-content: center; /* Alinear horizontalmente */
+  transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+.delete-button:hover {
+  background-color: rgba(0, 0, 0, 0.9); /* Color al pasar el mouse */
+}
+
+ /* CSS para centrar el botón dentro de su div */
+ .centrar-boton {
+  display: flex; /* Utiliza flexbox para el alineamiento */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100%; /* Asegúrate de que la altura sea suficiente para centrar */
+  margin-left: 300px;
+}
+
+/* Hacer el botón más ancho y cambiar su fondo */
+#upload {
+  width: 300px; /* Ajusta el ancho como sea necesario */
+  background-color: white; /* Fondo blanco */
+  color: black; /* Color del texto en negro para mejor contraste */
+  border: 1px solid #ccc; /* Borde opcional */
+}
+
+/* Aseguramos que el contenedor ocupe la altura necesaria */
+#hero .two.columns {
+  height: 340px; /* Ajusta este valor según sea necesario */
+} 
+
+.error-message {
+  background-color: #c53030; /* Color rojo oscuro */
+  color: white;
+  text-align: center;
+  padding: 0.5rem; /* Espaciado alrededor del texto */
+  font-weight: 500; /* Peso de la fuente */
+}

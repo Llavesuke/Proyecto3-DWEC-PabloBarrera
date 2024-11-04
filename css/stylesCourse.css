@@ -1,0 +1,15 @@
+.details-container {
+    display: flex; /* Usar flexbox para alinear la imagen y el texto */
+    align-items: flex-start; /* Alinear elementos al inicio */
+  }
+  
+  .course-image {
+    max-width: 200px; /* Ajusta el tamaño máximo de la imagen */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    
+  }
+  
+  .details-text {
+    flex: 1; /* Permitir que el texto ocupe el espacio restante */
+  }
+  
