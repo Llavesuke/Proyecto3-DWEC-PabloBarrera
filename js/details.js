@@ -125,7 +125,7 @@ function addToCart(courseId) {
 
             const id = course.id // The course ID
             const name = course.nombre // Ensure 'nombre' is the correct property
-            const price = parseFloat(course.precio) // Convert the price to a number
+            const price = 1 // Convert the price to a number
             const image = `img/curso${id}.jpg` // Assuming the image follows the same pattern
 
             const cartItem = {

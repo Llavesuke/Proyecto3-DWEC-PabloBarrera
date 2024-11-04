@@ -32,10 +32,18 @@ Este proyecto, titulado  **Sistema de Catálogo y Gestión de Carrito de Cursos*
   ![1730724336862](image/README/1730724336862.png)![1730724354085](image/README/1730724354085.png)
 * La página de detalles proporciona información completa del curso, incluyendo el nombre, el instructor, el precio y la imagen correspondiente.
 
+  ![1730724409287](image/README/1730724409287.png)
+
 ### 2. Gestión de Carrito de Compra
 
 * Desde la página de detalles de un curso, el usuario puede agregar el curso al carrito mediante un botón designado  **Agregar al Carrito** .
+
+  ![1730724442597](image/README/1730724442597.png)
 * En caso de que el curso ya esté en el carrito, la cantidad se incrementará en lugar de duplicar la entrada.
+
+<p align="center">
+  <img src="image/README/1730724524571.png" alt="1730724524571">
+</p>
 * En la vista de carrito, cada curso aparece con su imagen, nombre, precio, cantidad y una opción para eliminarlo si es necesario, brindando un control completo sobre el contenido del carrito.
 
 ### 3. Utilización de la Barra de Búsqueda
