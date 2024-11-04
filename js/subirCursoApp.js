@@ -177,16 +177,16 @@ function showAlert(reference, mensaje) {
     reference.appendChild(error)
 }
 
-// Muestra una alerta de éxito
+// Show a succes alert
 function showSuccessAlert(message) {
     const alert = document.createElement("P")
     alert.textContent = message
     alert.classList.add("success-message")
 
-    // Insertamos la alerta antes del formulario
+    // Insert the alert before the form
     form.parentElement.insertBefore(alert, form)
 
-    // La alerta se elimina automáticamente después de 3 segundos
+
     setTimeout(() => alert.remove(), 3000)
 }
 

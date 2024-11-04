@@ -341,7 +341,6 @@ function removeItemFromCart(id) {
     // Remove item from cart array and IndexedDB
     cartItems = cartItems.filter(cartItem => cartItem.id !== id)  // Filter out the item
 
-    // Eliminar el artículo del object store "carrito"
     const transaction = db.transaction(["carrito"], "readwrite")
     const objectStore = transaction.objectStore("carrito")
 
