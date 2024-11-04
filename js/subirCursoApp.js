@@ -111,6 +111,8 @@ form.addEventListener("submit", async (e) => {
         };
         console.log("Attempting to add the following course: ", courseObj)
 
+        showSuccessAlert("Course added")
+
         // Add the course to the courses table
         await addCourse(courseObj);
         resetData();
@@ -173,6 +175,19 @@ function showAlert(reference, mensaje) {
     error.textContent = mensaje;
     error.classList.add("error-message")
     reference.appendChild(error)
+}
+
+// Muestra una alerta de éxito
+function showSuccessAlert(message) {
+    const alert = document.createElement("P")
+    alert.textContent = message
+    alert.classList.add("success-message")
+
+    // Insertamos la alerta antes del formulario
+    form.parentElement.insertBefore(alert, form)
+
+    // La alerta se elimina automáticamente después de 3 segundos
+    setTimeout(() => alert.remove(), 3000)
 }
 
 // Clean alert messages

@@ -321,3 +321,13 @@ td img {
   padding: 0.5rem; /* Espaciado alrededor del texto */
   font-weight: 500; /* Peso de la fuente */
 }
+
+.success-message {
+  background-color: #C6F6D5; /* Fondo verde claro */
+  color: #276749; /* Verde oscuro */
+  text-align: center;
+  padding: 0.5rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  border-radius: 5px;
+}

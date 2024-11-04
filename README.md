@@ -29,7 +29,12 @@ Este proyecto, titulado  **Sistema de Catálogo y Gestión de Carrito de Cursos*
 
 * Navegar a la página de detalles de un curso es sencillo: basta con seleccionar el curso deseado desde las imágenes en la interfaz de catálogo o utilizar la barra de búsqueda.
 
-  ![1730724336862](image/README/1730724336862.png)![1730724354085](image/README/1730724354085.png)
+<p align="center">
+  <img src="image/README/1730724336862.png" alt="1730724336862">
+</p>
+
+  ![1730724354085](image/README/1730724354085.png)
+
 * La página de detalles proporciona información completa del curso, incluyendo el nombre, el instructor, el precio y la imagen correspondiente.
 
   ![1730724409287](image/README/1730724409287.png)
@@ -49,13 +54,24 @@ Este proyecto, titulado  **Sistema de Catálogo y Gestión de Carrito de Cursos*
 ### 3. Utilización de la Barra de Búsqueda
 
 * Al escribir en la barra de búsqueda, el usuario recibe resultados de coincidencias en un menú desplegable, que muestra la imagen y el nombre de cada curso.
+
+  ![1730724668779](image/README/1730724668779.png)
 * La selección de un curso en estos resultados dirige al usuario a su página de detalles específica, optimizando la navegación y acceso a la información.
+* ![1730724689554](image/README/1730724689554.png)
 
 ### 4. Adición de Cursos Personalizados
 
 * En la página  **Agregar Curso** , el usuario puede completar los detalles del curso, incluyendo el nombre del curso, el instructor y el correo electrónico.
+
+<p align="center">
+  <img src="image/README/1730724711865.png" alt="1730724711865">
+</p>
+
+![1730724765556](image/README/1730724765556.png)
+
 * El precio está predefinido en 1 euro, acorde a una promoción que se aplica a todos los cursos originales.
 * Una vez validada la información, el curso se añade al catálogo general y estará disponible tanto en la búsqueda como en el carrito de compra.
+* ![1730725056180](image/README/1730725056180.png)
 
 ## Estructura del Proyecto
 
